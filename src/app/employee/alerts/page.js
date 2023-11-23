@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import AlertsList from "@/app/components/common/alerts/page";
 import EmployeeLayout from "@/app/components/layouts/employeelayout/page";
 import BreadCrumb from "@/app/components/common/breadcrumbs/page";
 import { FiCalendar } from "react-icons/fi";

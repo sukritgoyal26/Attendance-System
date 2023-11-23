@@ -18,7 +18,6 @@ import {
 import SuperuserLayout from "@/app/components/layouts/superuserlayout/page";
 import { fetchUserDetails } from "@/store/reducer/common/viewUserDetailReducer";
 import { fetchFeedbacks } from "@/store/reducer/common/fetchFeedbackReducer";
-import FeedbackCard from "@/app/components/common/feedbackcard/page";
 
 export default function Page() {
   const [feedbacks, setFeedbacks] = useState([]);

@@ -20,7 +20,6 @@ import { fetchUserDetails } from "@/store/reducer/common/viewUserDetailReducer";
 import SupervisorLayout from "@/app/components/layouts/supervisorlayout/page";
 import FeedbackForm from "@/app/components/common/supervisor/feedbackform";
 import { fetchFeedbacks } from "@/store/reducer/common/fetchFeedbackReducer";
-import FeedbackCard from "@/app/components/common/feedbackcard/page";
 
 export default function Page() {
   const dispatch = useDispatch();
