@@ -77,7 +77,7 @@ const FeedbackForm = ({ email }) => {
         </div>
 
         <div className="lg:absolute lg:bottom-2 lg:right-2 flex justify-end">
-          < text-sm text-center bg-textColor p-2 rounded-lg" style={{backgroundColor:"black"}}>
+          < text-sm text-center bg-textColor p-2 rounded-lg"}>
             Cancel
           </button>
           <button
