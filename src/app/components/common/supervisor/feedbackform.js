@@ -35,61 +35,6 @@ const FeedbackForm = ({ email }) => {
     });
   };
   return (
-    <div>
-      <div className="md:flex md:justify-between md:items-center my-5 ">
-        <div className="p-5 bg-themeColor text-white w-full rounded-lg ">
-          <div className="md:flex md:items-center md:justify-between">
-            <div>
-              <div className="text-lg md:text-xl lg:text-2xl font-medium">
-                {" "}
-                Overall Experience{" "}
-              </div>
-              <div className="text-base font-light text-white">
-                How would you rate your overall Experience with this Employee
-              </div>
-            </div>
-            {/* stars  */}
-
-            <div class="flex items-center my-4 md:my-0  ">
-              <FiStar className="text-yellow-300 text-xl mx-2 cursor-pointer" />
-              <FiStar className="text-yellow-300 text-xl mx-2 cursor-pointer" />
-              <FiStar className="text-yellow-300 text-xl mx-2 cursor-pointer" />
-              <FiStar className="text-yellow-300 text-xl mx-2 cursor-pointer" />
-              <FiStar className="text-yellow-300 text-xl mx-2 cursor-pointer" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <form className="mx-2  w-full " onSubmit={handleSubmit(onSubmit)}>
-        <div className="mb-4">
-          <label
-            for="feedbackText"
-            className="block mb-2 text-sm font-medium text-textColor "
-          >
-            Give your feedback (public)
-          </label>
-          <textarea
-            rows={9}
-            id="feedbackText"
-            className="bg-card border border-card text-textColor text-sm rounded-lg focus:outline-none block w-full p-2.5 "
-            {...register("feedbackText")}
-          />
-        </div>
-
-        <div className="lg:absolute lg:bottom-2 lg:right-2 flex justify-end">
-          < text-sm text-center bg-textColor p-2 rounded-lg"}>
-            Cancel
-          </button>
-          <button
-            className="mx-1  text-white text-sm text-center bg-themeColor p-2 rounded-lg"
-            type="submit"
-          >
-            Publish Review
-          </button>
-        </div>
-      </form>
-      <ToastContainer />
-    </div>
   );
 };
 
