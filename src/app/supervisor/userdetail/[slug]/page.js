@@ -282,7 +282,7 @@ export default function Page() {
                     <tbody>
                       <tr className="bg-transparent text-textColor">
                         <th className="px-6 py-4 font-md">Web Dev</th>
-                        <th className="px-6 py-4 font-md">(+92) 312 1211232</th>
+                        <th className="px-6 py-4 font-md"></th>
                         <th className="px-6 py-4 font-md">
                           {" "}
                           {userDetails ? userDetails?.user?.email : "..."}

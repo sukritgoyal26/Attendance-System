@@ -54,14 +54,6 @@ const UserCard = ({ btnColor, name, email, status }) => {
               <li>
                 <a
                   href="#"
-                  className="block px-4 py-2 text-sm text-textColor hover:bg-card"
-                >
-                  Export Data
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
                   className="block px-4 py-2 text-sm text-redColor hover:bg-card"
                 >
                   Delete
