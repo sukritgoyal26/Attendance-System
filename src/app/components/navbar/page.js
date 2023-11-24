@@ -5,13 +5,14 @@ import { FaBars, FaSearch } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
 import { FiBell, FiLogOut } from "react-icons/fi";
+import { hostURL } from "@/app/utils";
 
 const Navbar = ({ handleToggle, toggleDrawer }) => {
   const dispatch = useDispatch();
   const router = useRouter();
   const handleLogout = async () => {
     await dispatch(userLogout());
-    router.push("http://localhost:3000/supervisor/dashboard");
+    router.push(`${hostURL()}/supervisor/dashboard`);
   };
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   return (

@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 import { userLogin } from "@/store/reducer/user/userLoginReducer";
 import { useRouter } from "next/navigation";
+import { hostURL } from "./utils";
 
 const Home = () => {
   const router = useRouter();
@@ -23,9 +24,9 @@ const Home = () => {
 
         // Redirect to the appropriate dashboard based on the teamLead status
         if (teamLead) {
-          router.push("http://localhost:3000/supervisor/dashboard");
+          router.push(`${hostURL()}/supervisor/dashboard`);
         } else {
-          router.push("http://localhost:3000/employee/dashboard");
+          router.push(`${hostURL()}/employee/dashboard`);
         }
       })
       .catch((error) => {

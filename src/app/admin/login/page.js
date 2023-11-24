@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { adminLogin } from "@/store/reducer/admin/adminLoginReducer";
+import { hostURL } from "@/app/utils";
 
 const Login = () => {
   const router = useRouter();
@@ -23,9 +24,9 @@ const Login = () => {
 
         // Redirect to the appropriate dashboard based on the teamLead status
         if (isAdmin) {
-          router.push("http://localhost:3000/admin/dashboard");
+          router.push(`${hostURL()}/admin/dashboard`);
         } else {
-          router.push("http://localhost:3000/");
+          router.push(`${hostURL()}`);
         }
       })
       .catch((error) => {
@@ -36,7 +37,7 @@ const Login = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      router.push("http://localhost:3000/admin/dashboard");
+      router.push(`${hostURL()}/admin/dashboard`);
     }
   }, []);
 
